@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Yashika ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#ff4d88,#ff99bb);
+overflow-x:hidden;
+text-align:center;
+color:white;
+
+}
+
+.container{
+
+padding:30px;
+
+}
+
+h1{
+
+font-size:45px;
+margin-top:20px;
+
+animation:fade 2s;
+
+}
+
+p{
+
+font-size:20px;
+
+}
+
+img{
+
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:20px;
+margin:15px;
+box-shadow:0 0 20px rgba(255,255,255,.5);
+
+}
+
+button{
+
+padding:15px 35px;
+font-size:20px;
+background:white;
+color:#ff2e63;
+border:none;
+border-radius:30px;
+cursor:pointer;
+margin-top:30px;
+
+}
+
+button:hover{
+
+background:#ffe6ef;
+
+}
+
+#letter{
+
+display:none;
+margin-top:30px;
+font-size:22px;
+line-height:1.8;
+
+}
+
+.heart{
+
+position:fixed;
+color:#ffebf0;
+animation:fall linear infinite;
+top:-50px;
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:translateY(-100px);
+
+}
+
+100%{
+
+transform:translateY(110vh);
+
+}
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+transform:translateY(-30px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎂 Happy Birthday Yashika ❤️</h1>
+
+<p>From ❤️ Shahrukh Demrot</p>
+
+<br><br>
+
+<!--
+IMPORTANT
+
+Is line ko baad me change karna hai.
+
+Pehli photo ka naam rakhna:
+
+me.jpg
+
+Dusri photo:
+
+yashika.jpg
+
+-->
+
+<img src="me.jpg">
+
+<img src="yashika.jpg">
+
+<br>
+
+<button onclick="openGift()">
+
+🎁 Open Your Surprise
+
+</button>
+
+<div id="letter"><h2>💌 A Letter For You 💌</h2>
+
+<p>
+
+Dear Yashika ❤️,
+
+Happy Birthday to the most beautiful girl.
+
+I don't know whether words will ever be enough to tell you how special you are, but today I just want to say thank you for being the reason behind so many smiles.
+
+I pray that every dream you have comes true, every difficulty becomes easy, and every day of your life is filled with happiness.
+
+No matter what happens in life, I'll always wish the best for you.
+
+May this birthday be as beautiful as your smile.
+
+❤️ Happy Birthday Once Again ❤️
+
+Forever Yours,
+
+❤️ Shahrukh Demrot ❤️
+
+</p>
+
+</div>
+
+<script>
+
+function openGift(){
+
+document.getElementById("letter").style.display="block";
+
+}
+
+for(let i=0;i<60;i++){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="❤️";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.animationDuration=(3+Math.random()*5)+"s";
+
+h.style.fontSize=(15+Math.random()*25)+"px";
+
+document.body.appendChild(h);
+
+}
+
+</script></body>
+</html>
